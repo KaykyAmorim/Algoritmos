@@ -1,13 +1,25 @@
-/*Elabore um algoritmo e um programa Java
-que receba a distância percorrida em km e o tempo gasto em hora o programa
-deve exibir a velocidade média.*/   
 
-public class VelocidadeMedia {
-    public static void main (String[]args) {
-        int x = 10, y = 5;
-        int distancia = x;
-        int tempo = y;
-        int VelocidadeMedia = x / y ;
-        System.out.println (distancia "/"  tempo = + VelocidadeMedia);
+import java.util.Scanner;
+
+
+public class VelocidadeMedia{
+     
+    public static void main(String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+
+        double tempo;
+        double distancia;
+        double VelocidadeMedia;
+
+        System.out.println("digite a distância percorrida (em km):");
+        distancia = scanner.nextDouble();
+
+        System.out.println("digite o tempo gasto (em horas):");
+        tempo = scanner.nextDouble();
+
+        VelocidadeMedia = distancia / tempo;
+
+        System.out.println("Velocidade Média:" + VelocidadeMedia + " km/h");
     }
 }
